@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital@0;1&family=Outfit:wght@100..900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 10%;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav,
+img {
+  padding: 10px;
+  width: 300px;
+  height: 80px;
+}
+
+.Title {
+  font-family: "Outfit", serif;
+  margin-top: 100px;
+  width: 350px;
+}
+
+h1 {
+  margin-top: auto;
+  color: white;
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.Container {
+  font-family: "Inter", serif;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+h3 {
+  color: #d20094;
+}
+
+.Description {
+  color: white;
+  margin-top: 10px;
+}
+
+ul {
+  margin-top: 70px;
+  color: white;
+  padding-left: 40px;
+}
+
+.InputBox {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-top: 100px;
+  font-family: "Inter", serif;
+}
+
+.Custom {
+  display: none;
+}
+
+.Custom + label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Custom + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.Button {
+  background-color: #00ffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 10px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 140, 186, 0.5);
+  margin-right: 200px;
+  width: 200px;
+  height: 50px;
+}
+
+.Button:hover {
+  box-shadow: 0 0 20px rgba(0, 140, 186, 0.8);
+}
