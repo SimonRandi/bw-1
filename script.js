@@ -94,6 +94,18 @@ const questions = [
   },
 ];
 
+// script per implementare il checkbox
+document.addEventListener('DOMContentLoaded', function() {
+  const checkbox = document.getElementById('checkbox');
+  const proceedButton = document.getElementById('proceedButton');
+
+  checkbox.addEventListener('change', function() {
+      proceedButton.disabled = !checkbox.checked;
+  });
+
+});
+//fine script
+
 /* Svolgimento */
 
 let time = 10;
