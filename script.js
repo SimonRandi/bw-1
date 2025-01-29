@@ -93,21 +93,20 @@ const questions = [
     incorrect_answers: ["Python", "C", "Jakarta"],
   },
 ];
-
+/* 
 // script per implementare il checkbox
-document.addEventListener('DOMContentLoaded', function() {
-  const checkbox = document.getElementById('checkbox');
-  const proceedButton = document.getElementById('proceedButton');
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.getElementById("checkbox");
+  const proceedButton = document.getElementById("proceedButton");
 
-  checkbox.addEventListener('change', function() {
-      proceedButton.disabled = !checkbox.checked;
+  checkbox.addEventListener("change", function () {
+    proceedButton.disabled = !checkbox.checked;
   });
-
 });
-//fine script
+//fine script */
 
 /* Svolgimento */
-
+/* 
 let time = 10;
 
 const interval = setInterval(function () {
@@ -117,11 +116,11 @@ const interval = setInterval(function () {
   if (time < 0) {
     clearInterval(interval);
   }
-}, 1000);
+}, 1000); */
 
 /* setInterval(); */
 
- let score = 0;
+/* let score = 0;
 let currentQuestion = 0;
 
 function genereateQuestion() {
@@ -130,6 +129,18 @@ function genereateQuestion() {
   const question = questions[currentQuestion].question;
   container.innerText = question;
 }
-genereateQuestion();
+genereateQuestion(); */
 
-function  
+/* ciclo per unire la risposta esatta all'array delle risposte sbagliate */
+function allAnswers() {
+  for (let i = 0; i < questions.length; i++) {
+    let correctAnswer = questions[i].correct_answer;
+    let incorrectAnswer = questions[i].incorrect_answers;
+
+    incorrectAnswer.push(correctAnswer);
+    let allAnswer = incorrectAnswer;
+    console.log(allAnswer);
+  }
+}
+
+allAnswers();
